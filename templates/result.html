@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Klasifikasi Sampah</title>
+</head>
+<body>
+    <h2>Hasil Prediksi: {{ label }}</h2>
+    <img src="{{ image }}" width="300"><br>
+
+    <h3>Histogram HSV:</h3>
+    <img src="{{ hist }}" width="500"><br>
+
+    <p><strong>Akurasi Model CNN:</strong> {{ accuracy|round(2) }}%</p>
+
+    <h3>Histogram Pelatihan CNN (Accuracy & Loss per Epoch):</h3>
+    <img src="{{ cnn_hist }}" width="600"><br>
+
+    <br><a href="/">Coba Gambar Lain</a>
+</body>
+</html>
